@@ -141,7 +141,7 @@ export default {
 <style lang="stylus" scoped>
 	.wrapper
 		height 590px
-		background url("/static/background.jpg") no-repeat
+		background url("/static/timg.jpg") no-repeat
 		margin-top -20px
 		.account
 			text-align center
@@ -168,7 +168,7 @@ export default {
 						border-bottom 2px solid #2d8cf0
 			.bottom
 				margin-top: 10px
-				text-align right 
+				text-align right
 </style>
 
 

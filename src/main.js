@@ -65,7 +65,7 @@ Axios.interceptors.response.use(function (response) {
             }
         return Promise.reject(error.response.data);
     } else {
-        return Promise.reject(error); 
+        return Promise.reject(error);
     }
 });
 
@@ -74,7 +74,7 @@ store.dispatch('setWebsite')
 
 // 如果存在token密钥，进行用户自动登入，并且获取信息
 if (Cookie.get('token')) {
-    store.dispatch('getUserInfo')    
+    store.dispatch('getUserInfo')
 }
 
 Vue.prototype.$getUrl = function(url) {
@@ -87,7 +87,7 @@ Vue.prototype.$getUrl = function(url) {
 
 Vue.prototype.$getAvatar = function(aid) {
     if(aid == 0 || !store.state.setting.is_open_storage) {
-        return '/static/default_avatar.jpg'
+        return '/static/umrtoux.jpg'
     } else if (process.env.NODE_ENV == 'development') {
         return '/api/avatar?aid='+aid
     } else {
